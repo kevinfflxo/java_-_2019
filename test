@@ -1,0 +1,10 @@
+package com.abc;
+
+import java.lang.*;
+
+public class Main {
+	public static void main(String args[]) {
+		//static 在記憶體裡只有一份
+		System.out.println("123");
+	}
+}
