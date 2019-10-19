@@ -1,0 +1,27 @@
+package com.abc;
+
+import java.util.Scanner;
+public class Main {
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("請輸入身高(公分):");
+		double cm = scanner.nextDouble();
+		System.out.print("請輸入體重(公斤):");
+		double w = scanner.nextDouble();
+		double bmi = w / (Math.pow(cm / 100, 2));
+		bmi = Math.round(bmi * 100) / 100.0;
+		//除100會被視為整數運算
+		
+		System.out.print(bmi);
+		if (bmi < 18.5) {
+			System.out.print("過輕");
+		} else if (18.5 <= bmi && bmi < 24) {
+			System.out.print("正常體重");
+		} else if (24 <= bmi && bmi < 27) {
+			System.out.print("過重");
+		} else {
+			System.out.print("肥胖");
+		}
+	}
+}
