@@ -1,0 +1,16 @@
+package com.abc;
+
+public class Main {
+	public static void main(String args[]) {
+		System.out.println("hello, world");
+		long i = 101231231231230L;
+		//會先將101231231231230放入記憶體，再放入指定的型態
+		//但記憶體預設放的空間是int，所以需要加入L來將記憶體預設放的空間設為long
+		System.out.println(i);
+		
+		short k = 32767;
+		System.out.println(k);
+		byte m = 127;
+		System.out.println(m);
+	}
+}
