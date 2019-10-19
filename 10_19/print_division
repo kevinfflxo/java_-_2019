@@ -1,0 +1,9 @@
+package com.abc;
+
+public class Main {
+	public static void main(String argsp[]) {
+		System.out.println((double)10/3);
+    //系統會先將int(10)/int(3) = int(3)
+    //再轉成double, print出3.0
+	}
+}
