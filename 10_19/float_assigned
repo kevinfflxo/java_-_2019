@@ -1,0 +1,13 @@
+package com.abc;
+
+public class Main {
+	public static void main(String args[]) {
+		double i = 1.234567890123456789;
+		//小數記憶體內定是用double
+		System.out.println(i);
+		float b = 123.45645f;
+		//float b = (float)123.456
+		//float b = (float)123.456456456456;
+		System.out.println(b);
+	}
+}
