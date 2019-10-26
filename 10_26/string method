@@ -1,0 +1,25 @@
+package com.abc;
+
+public class Main {
+	public static void main(String args[]) {
+		String s1 = new String("abc");
+		// 強制生成一個新物件，而不會去string pool 查找
+		String s2 = new String("abc");
+		String s3 = "abc";
+		String s4 = "abc";
+		System.out.println(s1==s2); // false
+		// s1和s2有指向相同物件嗎?
+		System.out.println(s3==s4); // true
+		System.out.println(s1.equals(s2)); // true
+		// s1和s2內容有一樣嗎?
+		
+		// string method : 
+		// 1.substring
+		// 2.startsWith
+		// 3.endsWith
+		// 4.toUpperCase
+		// 5.toLowerCase
+		// 6.charAt
+		// 7.trim
+	}
+}
