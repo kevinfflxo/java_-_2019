@@ -1,0 +1,13 @@
+package com.abc;
+
+public class Main {
+	public static void main(String args[]) {
+		String name = "王曉明";
+		String name1 = "餔餔餔";
+		String name2 = "王曉明";
+		// 指標為name
+		// 將"王曉明"存入string pool	
+		// 先去string pool找是否有一樣的名稱，若一樣, name2指向name物件
+		System.out.println(name2);
+	}
+}
