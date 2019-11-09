@@ -5,10 +5,16 @@ public class Score {
 	protected int eng;
 	//public, private, protected
 	
-	//建構元沒有修飾回傳值(void, int...)
+	//建構元沒有修飾回傳值(void, int...), 名稱需要與class一樣
 	public Score(int chi, int eng) {
 		this.chi = chi;
 		this.eng = eng;
+	}
+	
+	//多型
+	public Score() {
+		this.chi = 0;
+		this.eng = 0;
 	}
 	
 	public void setChi(int chi) {
