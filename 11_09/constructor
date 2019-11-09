@@ -11,7 +11,7 @@ public class Score {
 		this.eng = eng;
 	}
 	
-	//多型
+	//多載
 	public Score() {
 		this.chi = 0;
 		this.eng = 0;
