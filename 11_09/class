@@ -1,0 +1,18 @@
+// import不在根目錄的檔案
+import com.abc.Score;
+
+public class Main {
+	public static void main(String[] args) {
+//		物件導向三大特色
+//		封裝：將資料和方法包在一起
+//		繼承：
+//		多型：
+		
+		Score kevin = new Score();
+		kevin.chi = 90;
+		kevin.eng = 85;
+		
+		System.out.println(kevin.chi);
+		System.out.println(kevin.eng);
+	}
+}
