@@ -1,0 +1,29 @@
+package com.abc;
+
+public class Score {
+	protected int chi;
+	protected int eng;
+	//public, private, protected
+	
+	//建構元沒有修飾回傳值(void, int...)
+	public Score(int chi, int eng) {
+		this.chi = chi;
+		this.eng = eng;
+	}
+	
+	public void setChi(int chi) {
+		this.chi = chi;
+	}
+	
+	public void setEng(int eng) {
+		this.eng = eng;
+	}
+	
+	public int getChi() {
+		return chi;
+	}
+	
+	public int getEng() {
+		return eng;
+	}
+}
