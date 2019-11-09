@@ -9,10 +9,10 @@ public class Main {
 //		多型：
 		
 		Score kevin = new Score();
-		kevin.chi = 90;
-		kevin.eng = 85;
+		kevin.setChi(90);
+		kevin.setEng(85);
 		
-		System.out.println(kevin.chi);
-		System.out.println(kevin.eng);
+		System.out.println(kevin.getChi());
+		System.out.println(kevin.getEng());
 	}
 }
