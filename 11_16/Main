@@ -13,7 +13,7 @@ class Main {
         System.out.println("------------------------------");
         */
         
-        //-- 泛型generic，識別:<> --
+        //-- 泛型generic，識別:<>，泛者相同也 --
         List<Employee> list = new ArrayList();
         list.add(new HourlyEmployee("1", "kevin", 'M', 8));
         list.add(new RegularEmployee("2", "kevina", 'M', 'B'));
