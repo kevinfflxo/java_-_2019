@@ -31,6 +31,7 @@ class Main {
     }
 
     //-- 多型Polymorphism --
+    //-- 因為在main裡呼叫，main是靜態，呼叫的方法也只能是靜態的 
     public static void print(Employee emp) {
         System.out.println("---------salary--------");
         System.out.println("salary : " + emp.salary());
