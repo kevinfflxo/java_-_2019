@@ -14,4 +14,8 @@ class HourlyEmployee extends Employee {
     int salary() {
         return hours * 200;
     }
+
+    String printSubtype() {
+        return "hours : " + hours;
+    }
 }
