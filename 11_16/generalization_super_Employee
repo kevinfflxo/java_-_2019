@@ -34,7 +34,8 @@ abstract class Employee {
     char getGender() {
         return gender;
     }
-    
+
     //不具大括號，不具體它，讓它抽象化才能做多型
     abstract int salary();
+    abstract String printSubtype();
 }
