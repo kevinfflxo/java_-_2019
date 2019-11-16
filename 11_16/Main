@@ -19,7 +19,7 @@ class Main {
         list.add(new RegularEmployee("2", "kevina", 'M', 'B'));
         list.add(new ForeignEmployee("3", "kevinaa", 'M', "奧地利"));
 
-        for(Employee e:list) {
+        for (Employee e:list) {
             print(e);
         }
     }
