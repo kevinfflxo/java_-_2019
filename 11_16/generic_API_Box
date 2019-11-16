@@ -1,0 +1,32 @@
+public class Box <T> {
+    // 一般用大寫的T(type)或大寫的E(element)來表示未知的型態
+
+    //-----------------
+    // 成員
+    //-----------------
+    private T data;
+
+    //-----------------
+    // 建構元(1)
+    //-----------------
+    public Box(T data){
+        this.data = data;
+    }
+
+    //-----------------
+    // 建構元(2)
+    //-----------------
+    public Box(){
+        this.data = null;
+    }
+    
+    //-----------------
+    // getter
+    //-----------------   
+    public T getData(){return this.data;} 
+
+    //-----------------
+    // setter
+    //-----------------  
+    public void setData(T data){this.data = data;}
+}
