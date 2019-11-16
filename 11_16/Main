@@ -1,4 +1,6 @@
 import API.*;
+import java.util.ArrayList;
+import java.util.List;
 
 class Main {
     public static void main(String[] args) {
@@ -10,31 +12,27 @@ class Main {
         System.out.println("gender : " + e3.getGender());
         System.out.println("------------------------------");
         */
-
-        HourlyEmployee e1 = new HourlyEmployee("1", "kevin", 'M', 8);
-        System.out.println("id : " + e1.getId());
-        System.out.println("name : " + e1.getName());
-        System.out.println("gender : " + e1.getGender());
-        System.out.println("hours : " + e1.getHours());
-        System.out.println("salary : " + e1.salary());
-        print(e1);
-
-        System.out.println("------------------------------");
         
-        RegularEmployee e2 = new RegularEmployee("1", "kevina", 'M', 'B');
-        System.out.println("id : " + e2.getId());
-        System.out.println("name : " + e2.getName());
-        System.out.println("gender : " + e2.getGender());
-        System.out.println("level : " + e2.getLevel());
-        System.out.println("salary : " + e2.salary());
-        print(e2);
+        //-- 泛型generic，識別:<> --
+        List<Employee> list = new ArrayList();
+        list.add(new HourlyEmployee("1", "kevin", 'M', 8));
+        list.add(new RegularEmployee("2", "kevina", 'M', 'B'));
+        list.add(new ForeignEmployee("3", "kevinaa", 'M', "奧地利"));
+
+        for(Employee e:list) {
+            print(e);
+        }
     }
 
     //-- 多型Polymorphism --
-    //-- 因為在main裡呼叫，main是靜態，呼叫的方法也只能是靜態的 
+    //-- 因為在main裡呼叫，main是靜態，呼叫的方法也只能是靜態的
     public static void print(Employee emp) {
-        System.out.println("---------salary--------");
+        System.out.println("---------" + emp.getName() + " salary--------");
+        System.out.println("id : " + emp.getId());
+        System.out.println("name : " + emp.getName());
+        System.out.println("gender : " + emp.getGender());
+        System.out.println(emp.printSubtype());
         System.out.println("salary : " + emp.salary());
-        System.out.println("---------end of salary--------");
+        System.out.println("---------end of " + emp.getName() + "'s salary--------");
     }
 }
