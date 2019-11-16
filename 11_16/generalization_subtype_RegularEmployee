@@ -20,4 +20,8 @@ class RegularEmployee extends Employee {
             return 0;
         }
     }
+
+    String printSubtype() {
+        return "level : " + level;
+    }
 }
