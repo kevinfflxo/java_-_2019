@@ -1,4 +1,6 @@
-class Employee {
+abstract class Employee {
+    //abstract 讓父類別抽象化
+    
     private String id;
     private String name;
     private char gender;
@@ -32,4 +34,7 @@ class Employee {
     char getGender() {
         return gender;
     }
+    
+    //不具大括號，不具體它，讓它抽象化才能做多型
+    abstract int salary();
 }
