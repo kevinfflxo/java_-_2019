@@ -1,0 +1,26 @@
+class ForeignEmployee extends Employee {
+    private String country;
+    
+    ForeignEmployee(String id, String name, char gender, String country) {
+        super(id, name, gender);
+        this.country = country;
+    }
+
+    String getCountry() {
+        return country;
+    }
+
+    int salary() {
+        if (country.equals("美國")) {
+            return 80000;
+        } else if (country.equals("日本")) {
+            return 75500;
+        } else {
+            return 60000;
+        }
+    }
+
+    String printSubtype() {
+        return "country : " + country;
+    }
+}
