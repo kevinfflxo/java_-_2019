@@ -1,0 +1,39 @@
+import API.*;
+
+class Main {
+    public static void main(String[] args) {
+        /*
+        會錯，因為父類別已抽象化，不能用new來具體它
+        Employee e3 = new Employee("1", "kevin", 'M');
+        System.out.println("id : " + e3.getId());
+        System.out.println("name : " + e3.getName());
+        System.out.println("gender : " + e3.getGender());
+        System.out.println("------------------------------");
+        */
+
+        HourlyEmployee e1 = new HourlyEmployee("1", "kevin", 'M', 8);
+        System.out.println("id : " + e1.getId());
+        System.out.println("name : " + e1.getName());
+        System.out.println("gender : " + e1.getGender());
+        System.out.println("hours : " + e1.getHours());
+        System.out.println("salary : " + e1.salary());
+        print(e1);
+
+        System.out.println("------------------------------");
+        
+        RegularEmployee e2 = new RegularEmployee("1", "kevina", 'M', 'B');
+        System.out.println("id : " + e2.getId());
+        System.out.println("name : " + e2.getName());
+        System.out.println("gender : " + e2.getGender());
+        System.out.println("level : " + e2.getLevel());
+        System.out.println("salary : " + e2.salary());
+        print(e2);
+    }
+
+    //-- 多型Polymorphism --
+    public static void print(Employee emp) {
+        System.out.println("---------salary--------");
+        System.out.println("salary : " + emp.salary());
+        System.out.println("---------end of salary--------");
+    }
+}
