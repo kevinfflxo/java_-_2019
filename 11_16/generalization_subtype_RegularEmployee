@@ -1,0 +1,23 @@
+class RegularEmployee extends Employee {
+    private char level;
+
+    RegularEmployee(String id, String name, char gender, char level) {
+        super(id, name, gender);
+        this.level = level;
+    }
+
+    char getLevel () {
+        return level;    
+    }
+
+    int salary() {
+        if (level == 'A') {
+            return 50000;
+        } else if (level == 'B') {
+            return 40000;
+        } else {
+            System.out.println("沒有這個level的員工");
+            return 0;
+        }
+    }
+}
