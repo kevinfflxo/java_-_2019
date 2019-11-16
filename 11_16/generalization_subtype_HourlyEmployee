@@ -10,4 +10,8 @@ class HourlyEmployee extends Employee {
     int getHours() {
         return hours;
     }
+
+    int salary() {
+        return hours * 200;
+    }
 }
