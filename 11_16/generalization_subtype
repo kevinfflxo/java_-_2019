@@ -1,0 +1,13 @@
+class HourlyEmployee extends Employee {
+    private int hours;
+
+    HourlyEmployee(String id, String name, char gender, int hours) {
+        //父類別建構元
+        super(id, name, gender);
+        this.hours = hours;
+    }
+
+    int getHours() {
+        return hours;
+    }
+}
